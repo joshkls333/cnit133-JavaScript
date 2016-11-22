@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework6 - Part 1</title>
+
+<link rel="stylesheet" type="text/css"  href="hw6parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="hw6part1.js"></script>
+
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework6.html">HW6</a></li>
+			<li ><a href="hw6part1.html">Part 1</a></li>
+			<li ><a href="hw6part2.html">Part 2</a></li>
+			<li ><a href="hw6part3.html">Part 3</a></li>
+			<li ><a href="hw6part4.html">Part 4</a></li>
+			<li ><a href="hw6extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+	
+		<br><h3>Math Objects</h3><br>
+	
+
+        <h2>Enter a number with at least 4 decimal places, then click Submit.</h2>
+        <br>
+    
+        <form name="myform" >
+            <br>
+
+            <table class="main">
+
+                <tr>
+                <td>Number:</td>
+                <td><input type="text" id="num" name="num" size="10" autofocus></td>
+                </tr>
+
+            </table>
+
+            <br><div id="errorMsg"></div>
+
+            <br><input type="button"  value="SUBMIT" onclick="process();">
+            <input type="reset" value="RESET" onclick="location.reload();">
+
+            <br><br><h4>Results:</h4><br>
+            
+            <textarea rows="12" cols="70" id="output" name="result"></textarea>
+
+            <br>
+
+        </form> 
+
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

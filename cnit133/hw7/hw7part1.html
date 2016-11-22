@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework7 - Part 1</title>
+
+<link rel="stylesheet" type="text/css"  href="hw7parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<!-- 
+ Many thanks to the following code for direction and understanding:
+ https://fog.ccsf.edu/~srubin/jqHW7b.html
+ -->
+
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script type="text/javascript" src="hw7part1.js"></script>
+
+	<style>
+        #sampleText {
+            margin: 10px 30px;
+            padding: 0 10px;
+            border: 3px ridge gray;
+            text-align: left;
+        }
+
+        input[type='radio'] {
+            margin: 0 5px 0 0;
+        }
+ 
+        button {
+            margin-top: 10px;
+            font-size: .8em;
+        }
+	</style>
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework7.html">HW7</a></li>
+			<li ><a href="hw7part1.html">Part 1</a></li>
+			<li ><a href="hw7part2.html">Part 2</a></li>
+			<li ><a href="hw7part3.html">Part 3</a></li>
+			<li ><a href="hw7part4.html">Part 4</a></li>
+			<li ><a href="hw7extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+	
+		<br><h2>Changing ClassName property with jQuery</h2><br>
+	
+        <form id="attributeForm" name="attributeForm" >
+
+            <table id="attributeTable" class="main">
+
+                <tr>
+	                <th>Background Color</th>
+	                <th>Font Size</th>
+	                <th>Font Family</th>
+	                <th>Font Style</th>
+	                <th>Mixed Selection</th>
+                </tr>
+
+                <tr>
+                	<td>
+                		<label><input type="radio" name="background-color" value="Yellow" id="yellow">Yellow</label><br>
+                		<label><input type="radio" name="background-color" value="Green" id="green">Green</label><br>
+                		<label><input type="radio" name="background-color" value="Orange" id="orange">Orange</label><br>
+                		<label><input type="radio" name="background-color" value="Red" id="red">Red</label><br>
+                		<label><input type="radio" name="background-color" value="" id="bgColorDefault" checked>Default</label>
+                	</td>
+                	<td>
+		                <label for="fontSize">Select one:</label><br>
+		                <select name="font-size" size="5" id="fontSize">
+		                    <option value="12px">12</option>
+		                    <option value="14px">14</option>
+		                    <option value="18px">18</option>
+		                    <option value="24px">24</option>
+		                    <option value="" selected>Default</option>
+		                </select>
+		            </td>
+
+		            <td>
+		                <label><input type="radio" name="font-family" value='"Times New Roman", Georgia, Serif'
+		                              id="Times">Times New Roman</label><br>
+		                <label><input type="radio" name="font-family" value="Tahoma, Geneva, sans-serif"
+		                              id="tahoma">Tahoma</label><br>
+		                <label><input type="radio" name="font-family" value="Helvetica, sans-serif"
+		                              id="trebuchet">Helvetica</label><br>
+		                <label><input type="radio" name="font-family" value="'Courier New', Geneva, sans-serif"
+		                              id="verdana">Courier New</label><br>
+		                <label><input type="radio" name="font-family" value=""
+		                              id="fontFamilyDefault" checked>Default</label>
+		            </td>
+
+
+		            <td>
+		                <label><input type="radio" name="font-style" value="normal" id="normalCheck">normal</label><br>
+		                <label><input type="radio" name="font-style" value="italic" id="italicCheck">italic</label><br>
+		                <label><input type="radio" name="font-style" value="oblique" id="obliqueCheck">oblique</label><br>
+		            </td>
+ 
+		            <td>
+		                <label><input type="checkbox" name="font-weight" value="bolder" id="boldCheck">bolder</label><br>
+		                <label><input type="checkbox" name="font-style" value="italic" id="italic2Check">italic</label><br>
+		                <label><input type="checkbox" name="font-variant" value="small-caps"
+		                              id="smallCapsCheck">small-caps</label><br>
+		                <label><input type="checkbox" name="text-decoration" value="underline"
+		                              id="underlineCheck">underline</label><br>
+		            </td>
+
+                </tr>
+
+            </table>
+
+            <br><button type="button" id="resetAll">Reset All</button><br>
+
+        </form> 
+
+        <div id="sampleText">
+		    <h1>Desiderata</h1>
+
+		    <p>Go placidly amid the noise and the haste, and remember what peace there may be in silence. As far as possible, without surrender, be on good terms with all persons.</p>
+
+			<p>Speak your truth quietly and clearly; and listen to others, even to the dull and the ignorant; they too have their story.</p>
+			
+			<p>Avoid loud and aggressive persons; they are vexatious to the spirit. If you compare yourself with others, you may become vain or bitter, for always there will be greater and lesser persons than yourself.</p>
+
+			<p>Enjoy your achievements as well as your plans. Keep interested in your own career, however humble; it is a real possession in the changing fortunes of time.</p>
+
+			<p>Exercise caution in your business affairs, for the world is full of trickery. But let this not blind you to what virtue there is; many persons strive for high ideals, and everywhere life is full of heroism.</p>
+
+			<p>Be yourself. Especially, do not feign affection. Neither be cynical about love; for in the face of all aridity and disenchantment it is as perennial as the grass.</p>
+
+			<p>Take kindly the counsel of the years, gracefully surrendering the things of youth.</p>
+
+			<p>Nurture strength of spirit to shield you in sudden misfortune. But do not distress yourself with dark imaginings. Many fears are born of fatigue and loneliness.</p>
+
+			<p>Beyond a wholesome discipline, be gentle with yourself. You are a child of the universe no less than the trees and the stars; you have a right to be here.</p>
+
+			<p>And whether or not it is clear to you, no doubt the universe is unfolding as it should. Therefore be at peace with God, whatever you conceive Him to be.</p>
+
+			<p>And whatever your labors and aspirations, in the noisy confusion of life, keep peace in your soul. With all its sham, drudgery and broken dreams, it is still a beautiful world. Be cheerful. Strive to be happy.</p>
+
+			<p>Max Ehrmann</p>
+		    
+		</div>
+
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

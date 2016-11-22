@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework5 - Part 1</title>
+
+<link rel="stylesheet" type="text/css"  href="hw5parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="hw5part1.js"></script>
+
+<style>
+ 
+table {
+	border-collapse: collapse;
+}	
+
+
+td {
+	text-align: right;
+	padding: 10px;
+	font-size:15px;
+	color: #000000;
+	font-weight: bold;
+	padding: 2px;
+}
+
+/* .error class is used for styling the error msg */
+
+.error {
+
+	font: normal 10px arial;
+	padding: 3px;
+	margin: 3px;
+	background-color: yellow;
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework5.html">HW5</a></li>
+			<li ><a href="hw5part1.html">Part 1</a></li>
+			<li ><a href="hw5part2.html">Part 2</a></li>
+			<li ><a href="hw5part3.html">Part 3</a></li>
+			<li ><a href="hw5part4.html">Part 4</a></li>
+			<li ><a href="hw5extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+
+	<div class="container">
+	
+		<br><h3>1A - Form Validation</h3><br>
+	
+        <form name="myform" id="myform" method="post" action= "mailto:joshklaus333@gmail.com"  enctype="text/plain" >
+               
+		<table class="main">
+		<tr>
+			<td>
+				Name:
+			</td>
+			<td>
+				<input type="text" size="45" maxlength="40" name="name" id="name" class="required">
+			</td>
+		</tr>	
+
+		<tr>
+			<td>
+				Computer OS:
+			</td>
+			<td>
+				Mac<input type="radio" name="compos" id="compos" value="Mac" class="required">
+				Windows<input type="radio" name="compos" value="Windows" >
+				Linux<input type="radio" name="compos" value="Linux" >
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Computer Languages:
+			</td>
+        
+			<td>
+				JavaScript<input type="checkbox" id="lang1" name="lang" value="Java" class="required">
+				XML<input type="checkbox" id="lang2" name="lang" value="C++">
+				HTML<input type="checkbox" id="lang3" name="lang" value="HTML">
+				CSS<input type="checkbox" id="lang4" name="lang" value="CSS">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="science" class="label">Science Subject:</label>
+			</td>
+			<td> 
+				<select name="science" id="science" class="required">
+				<option value="">-Choose one-</option>
+				<option value="Ecology">Biology</option>
+				<option value="Chemistry">Chemistry</option>
+				<option value="Geography">Geography</option>
+				<option value="other">Other</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="submit" id="submit_button" value="SUBMIT">
+			</td>
+			<td>
+				<input type="reset" value="RESET" onclick="window.location.reload();">
+			</td>
+		</tr>
+		</table>
+		</form>
+		<br>
+	
+
+	<br><h3><a href="hw5part1b.html">Part 1B</a></h3><br>
+
+	</div>
+
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

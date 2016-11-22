@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework8 - Part 3</title>
+
+<link rel="stylesheet" type="text/css"  href="hw8parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	<script type="text/javascript" src="hw8part3.js"></script>
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework8.html">HW8</a></li>
+			<li ><a href="hw8part1.html">Part 1</a></li>
+			<li ><a href="hw8part2.html">Part 2</a></li>
+			<li ><a href="hw8part3.html">Part 3</a></li>
+			<li ><a href="hw8part4.html">Part 4</a></li>
+			<li ><a href="hw8extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+
+		<br><h2>Poll Results</h2><br>
+
+
+		<div id="poll">
+		<h3>Do you like PHP and AJAX so far?</h3>
+		<form>
+		Yes:
+		<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+		<br>No:
+		<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+		<br>Date Requested:
+    <input type="text" id="datepicker" name="date_requested" value="click here" size="30">
+		</form>
+		</div>
+
+
+		<br><br>
+
+	</section>
+
+	<footer class="footer">
+
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px"
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

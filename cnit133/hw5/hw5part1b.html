@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework5 - Part 1</title>
+
+<link rel="stylesheet" type="text/css"  href="hw5parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<script type="text/javascript" src="hw5part1.js"></script>
+
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework5.html">HW5</a></li>
+			<li ><a href="hw5part1.html">Part 1</a></li>
+			<li ><a href="hw5part2.html">Part 2</a></li>
+			<li ><a href="hw5part3.html">Part 3</a></li>
+			<li ><a href="hw5part4.html">Part 4</a></li>
+			<li ><a href="hw5extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+
+	
+		<br><h3>Event Handlers</h3><br>
+
+		<form name="myForm1">
+			<h2>Choose your destination with onchange event handler</h2><br>
+
+			<select name="changeSite" onChange="onChangeHandler();">
+			<option>Choose Destination:</option>
+				<option value="https://insight.ccsf.edu/">Insight</option>
+				<option value="http://www.w3schools.com/jquery/default.asp">JQuery Tutorial</option>
+				<option value="http://www.w3schools.com/js/default.asp">JS Tutorial</option>
+				<option value="https://hills.ccsf.edu/~jklaus1/cnit133/">JavaScript HW</option>
+			</select>
+			</form>
+
+			<br><br>
+
+			<form name="myForm2">
+
+			<h2>Choose your destination with onclick event handler</h2><br>
+
+			<select name="clickSite">
+				<option value="https://insight.ccsf.edu/">Insight</option>
+				<option value="http://www.w3schools.com/jquery/default.asp">JQuery Tutorial</option>
+				<option value="http://www.w3schools.com/js/default.asp">JS Tutorial</option>
+				<option value="https://hills.ccsf.edu/~jklaus1/cnit133/">JavaScript HW</option>
+			</select>
+
+			<input type="button" value="Go" onClick="onClickHandler();">
+
+		</form>
+	
+
+		<br><h3><a href="hw5part1.html">Part 1A</a></h3><br>
+
+	
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

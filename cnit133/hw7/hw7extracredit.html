@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework7 - Extra Credit</title>
+
+<link rel="stylesheet" type="text/css"  href="hw7parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<script type="text/javascript" src="hw7excredit.js"></script>
+<!-- 
+// credit to the following for the majority of the help:
+// http://zylla.wipos.p.lodz.pl/games/slide16b.html
+// credit to R.J.Zylla
+ -->
+<style>
+
+table.main{
+	width: 320px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework7.html">HW7</a></li>
+			<li ><a href="hw7part1.html">Part 1</a></li>
+			<li ><a href="hw7part2.html">Part 2</a></li>
+			<li ><a href="hw7part3.html">Part 3</a></li>
+			<li ><a href="hw7part4.html">Part 4</a></li>
+			<li ><a href="hw7extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+
+		<br><h2>The Game of 15</h2><br>
+
+		<p>Once you click the "randomize" button the numbers will shuffle<br>
+			Your task will be to switch the numbers around to restore the original order<br>
+			For a greater challenge click randomize more than once.<br>
+			Good Luck!
+		</p>
+
+		<input type="button" name="button" id="button" value="Randomize" onclick="shuffle();">
+
+
+		<br><br><br>
+		
+		<table class="main">
+			<tr>
+				<td>
+				<table>
+					<tr>
+						<td><a href="#" onclick="tryMove( 0); return false;" title=""><img src="img_15/1.gif" border="0" alt=""></a></td>
+						<td><a href="#" onclick="tryMove( 1); return false;" title=""><img src="img_15/2.gif" border="0" alt=""></a></td>
+						<td><a href="#" onclick="tryMove( 2); return false;" title=""><img src="img_15/3.gif" border="0" alt=""></a></td>
+						<td><a href="#" onclick="tryMove( 3); return false;" title=""><img src="img_15/4.gif" border="0" alt=""></a></td>
+					</tr><tr>
+					    <td><a href="#" onclick="tryMove( 4); return false;" title=""><img src="img_15/5.gif" border="0" alt=""></a></td>
+					    <td><a href="#" onclick="tryMove( 5); return false;" title=""><img src="img_15/6.gif" border="0" alt=""></a></td>
+					    <td><a href="#" onclick="tryMove( 6); return false;" title=""><img src="img_15/7.gif" border="0" alt=""></a></td>
+					    <td><a href="#" onclick="tryMove( 7); return false;" title=""><img src="img_15/8.gif" border="0" alt=""></a></td>
+					</tr><tr>
+					    <td><a href="#" onclick="tryMove( 8); return false;" title=""><img src="img_15/9.gif" border="0" alt=""></a></td>
+					    <td><a href="#" onclick="tryMove( 9); return false;" title=""><img src="img_15/10.gif" border="0" alt=""></a></td>
+					    <td><a href="#" onclick="tryMove(10); return false;" title=""><img src="img_15/11.gif" border="0" alt=""></a></td>
+					    <td><a href="#" onclick="tryMove(11); return false;" title=""><img src="img_15/12.gif" border="0" alt=""></a></td>
+					</tr><tr>
+					    <td><a href="#" onclick="tryMove(12); return false;" title=""><img src="img_15/13.gif" border="0" alt=""></a></td>
+					    <td><a href="#" onclick="tryMove(13); return false;" title=""><img src="img_15/14.gif" border="0" alt=""></a></td>
+					    <td><a href="#" onclick="tryMove(14); return false;" title=""><img src="img_15/15.gif" border="0" alt=""></a></td>
+					    <td><a href="#" onclick="tryMove(15); return false;" title=""><img src="img_15/0.gif" border="0" alt=""></a></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table> 	
+		<br><br><br>
+
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework2 - Extra Credit</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<link rel="stylesheet" type="text/css"  href="hw2parts.css" />
+
+<script type="text/javascript" src="hw2excredit.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$("#flip").click(function(){
+			$("#panel").slideToggle("slow");
+		});
+		
+		$('#usdollar').focus(function() {
+			$(this).css('background-color','#B3CB65');
+		});    
+	});
+	
+</script>
+
+<style>
+#panel, #flip {
+	width: 350px;
+	font-size: 16px;
+	font-family: Arial;
+	background-color: #f1faa6;
+	padding: 5px;
+	border: 1px solid black;
+    text-align: center;
+    margin: 0px auto;
+}
+
+#panel {
+	font-size: 16px;
+    display: none;
+}
+</style>
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework2.html">HW2</a></li>
+			<li ><a href="part1.html">Part 1</a></li>
+			<li ><a href="part2.html">Part 2</a></li>
+			<li ><a href="part3.html">Part 3</a></li>
+			<li ><a href="part4.html">Part 4</a></li>
+			<li ><a href="hw2extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<div>
+	
+		<form name="myform">
+
+			<br>
+			
+			<div id="flip">Click to Show/Hide Instructions</div>
+			<div id="panel">
+				<p>The foreign exchange rates on June 20, 2015.</p>
+				<p>Enter a dollar amount in the table below to see the corresponding foreign exchange values</p>
+			</div>
+			
+			<br>
+
+			<table class="main" style="width:400px">
+
+				<tr class="tabletitle">
+					<th colspan="3">Monetary Exchange Rates</th>
+				</tr>
+
+				<tr class="headers">
+					<th>Currency</th>
+					<th>Rate</th> 
+					<th>Value</th> 
+				</tr>
+
+				<tr>
+				<td>British Pound</td>
+				<td><input type="text" name="rate1" size="10" value="0.62988" readonly></td>
+				<td><input type="text" name="num1" size="10"></td>
+				</tr>
+
+				<tr>
+				<td>Canadian Dollar</td>
+				<td><input type="text" name="rate2" size="10" value="1.22700" readonly></td>
+				<td><input type="text" name="num2" size="10"></td>
+				</tr>
+
+				<tr>
+				<td>Euro</td>
+				<td><input type="text" name="rate3" size="10" value="0.88052" readonly></td>
+				<td><input type="text" name="num3" size="10"></td>
+				</tr>
+
+				<tr>
+				<td>Japanese Yen</td>
+				<td><input type="text" name="rate4" size="10" value="102.7000" readonly></td>
+				<td><input type="text" name="num4" size="10"></td>
+				</tr>
+
+				<tr>
+				<td>Mexican Peso</td>
+				<td><input type="text" name="rate5" size="10" value="15.3477" readonly></td>
+				<td><input type="text" name="num5" size="10"></td>
+				</tr>
+
+				<tr>
+				<td colspan="2"><b>Enter Amount of U.S. dollars</b></td>
+				<td><input type="text" name="num6" size="10" id="usdollar"></td>
+				</tr>
+
+			</table>
+
+			<br><br>
+
+			<input type="button" onclick="populate()" value="Calculate">
+			<input type="reset" value="Reset" onclick="window.location.reload();">
+
+		</form>	
+
+		<br><br><br>
+	
+	</div>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

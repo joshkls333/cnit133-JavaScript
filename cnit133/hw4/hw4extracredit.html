@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework4 - Extra Credit</title>
+
+<link rel="stylesheet" type="text/css"  href="hw4parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="hw4excredit.js"></script>
+
+<style>
+
+.starbox {
+	font-family: monospace;
+	border: 1px solid black;
+	width: 250px;
+	height: 250px;
+	background-color: #FFFDFD;
+	margin: 0px auto;
+}
+
+.error { 
+	font: normal 14px arial; 
+	margin: 0px auto; 
+	color: red; 
+	display: block;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework4.html">HW4</a></li>
+			<li ><a href="hw4part1.html">Part 1</a></li>
+			<li ><a href="hw4part2.html">Part 2</a></li>
+			<li ><a href="hw4part3.html">Part 3</a></li>
+			<li ><a href="hw4part4.html">Part 4</a></li>
+			<li ><a href="hw4part5.html">Part 5</a></li>
+			<li ><a href="hw4part6.html">Part 6</a></li>
+			<li ><a href="hw4extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+		
+		<br><h3>Create a Box</h3><br>
+
+		<form id="myform" name="myform">
+			<label for="num"> How Big: </label><br><br>
+			<p class="error"><input type="text" id="num" name="num" size="5" autofocus></p>
+			<br><input type="button" onclick="process()" value="Submit">
+		</form>
+
+			<br><br><div id="boxarea" class="starbox"></div>
+
+		<br><br><br>
+	
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

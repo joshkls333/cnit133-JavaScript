@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework4 - Part 3</title>
+
+<link rel="stylesheet" type="text/css"  href="hw4parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="hw4part3.js"></script>
+
+<style type="text/css">
+
+       
+table{
+	width: 300px;
+	padding: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 0px auto;
+}
+
+tr.alternate {
+        background-color: orange;
+}
+
+tr{
+	text-align: right;
+	background-color: white;
+}
+
+
+th{
+	text-align: center;
+	background-color: #cc9966;
+}
+
+td {
+	border: 1px solid black;
+	text-align: right;
+	padding: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework4.html">HW4</a></li>
+			<li ><a href="hw4part1.html">Part 1</a></li>
+			<li ><a href="hw4part2.html">Part 2</a></li>
+			<li ><a href="hw4part3.html">Part 3</a></li>
+			<li ><a href="hw4part4.html">Part 4</a></li>
+			<li ><a href="hw4part5.html">Part 5</a></li>
+			<li ><a href="hw4part6.html">Part 6</a></li>
+			<li ><a href="hw4extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+
+		<br><h3>Interest Rates</h3><br>
+
+		<script>
+
+			var rate = 0.05;
+
+			for( var j = 5; j <= 10; j ++)
+			{
+				document.write( 
+				"<br><table id=\"interest\">" +
+  				"<tr>" +
+				"<th>Year</th>" +
+				"<th>Amount on deposit</th>" +
+				"<th>Interest Rate</th>" +
+			    "</tr>");
+			
+
+		
+				for ( var i = 1; i <= 10; i++ ) 
+				{ 
+					document.write( "<tr>" );
+					
+					document.write("<td>" + i + "</td>" );
+					document.write( "<td>" + (1000 * Math.pow(( 1 + rate ), i)).toFixed(2) + "</td>" );
+					document.write( "<td>" + rate.toFixed(2) + "</td>" );
+			 		
+			 		document.write( "</tr>" ); 
+			 	}
+			 	document.write( "</table><br>" );
+			 	rate += 0.01;
+
+		 	}
+		 
+
+		</script>
+	
+
+		<script>
+      		$(function() {
+        		$("table tr:nth-child(even)").addClass("alternate");
+      		});
+    	</script>
+
+
+<!-- 		
+		<br>
+		<form name="myform" >
+			Interest Rate:
+  			<select id="rate" name="rate">
+    			<option value="0.05">5%</option>
+    			<option value="0.06">6%</option>
+    			<option value="0.07">7%</option>
+    			<option value="0.08">8%</option>
+    			<option value="0.09">9%</option>
+    			<option value="0.10">10%</option>
+  			</select>
+ 		<input value="Calculate" onclick="interest()" type="button" size="10">
+ 
+ 		<br><br><p id="interest"></p><br><br>
+  			
+ 		</form>
+ 		<br>
+ --> 
+		
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

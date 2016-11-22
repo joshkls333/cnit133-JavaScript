@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework7 - Part 2</title>
+
+<link rel="stylesheet" type="text/css"  href="hw7parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<!-- 
+Many thanks to the following code for providing instruction and direction:
+https://fog.ccsf.edu/~srubin/pjpass2.html
+ -->    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="hw7part2.js"></script>
+
+	<style>
+
+		#login {
+			width: 300px;
+			position: absolute;
+			left: 560px;
+			top: 150px;
+			z-index: 100;
+		}
+
+
+		#open {
+			margin: 0;
+			cursor: pointer;
+			background: #DE8208  url(../img/open1.png) no-repeat 8px 7px;
+			color: #000;
+			padding: 5px 0 2px 30px;
+			width: 300px;
+		}
+
+		#login .close {
+			background-image: url(../img/close1.png);
+			background-color: #DE8208;	
+		}
+
+		#open:hover {
+			color: #FFFFFF;
+			background-color: #553000;
+		}
+
+		#login form {
+			padding: 10px 10px 10px 10px;
+			display: none;	
+			background-color: rgb(255,255,255);
+			width: 310px;
+			border: 1px solid
+		}
+		#login label {
+			display: inline-block;
+			width: 100px;
+			text-align:right;
+			margin: 0 15px 0 0;
+			color: #000;
+		}
+		#login input {
+			font-size: 14px;	
+		}
+		#login #button {
+			margin-left: 50px;	
+		}
+
+
+	</style>
+
+
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework7.html">HW7</a></li>
+			<li ><a href="hw7part1.html">Part 1</a></li>
+			<li ><a href="hw7part2.html">Part 2</a></li>
+			<li ><a href="hw7part3.html">Part 3</a></li>
+			<li ><a href="hw7part4.html">Part 4</a></li>
+			<li ><a href="hw7extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+
+		<br><h2>Password Protection Page</h2><br>
+
+		<br><br>
+
+		<div id="login">
+		<p id="open">Login</p>
+
+		<form id="myform" name="myform" method="post">
+
+			<p>
+				<label for="password">Password:</label>
+				<input type="text" name="password" id="password">
+			</p>
+			<p>
+				<input type="button" name="button" id="button" value="Submit" onclick="checkpass();">
+		        <input type="reset" value="Reset" onclick="res()">
+			</p>
+
+		</form>
+		</div>
+
+		<br><br><br>
+		<br><br><br>
+		<br><br><br>
+		<br><br><br>
+		<div id="errorMsg"></div><br>
+
+		<br><br><br>
+	
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

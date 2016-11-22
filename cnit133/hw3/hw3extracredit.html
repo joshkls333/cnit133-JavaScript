@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework3 - Extra Credit</title>
+
+<link rel="stylesheet" type="text/css"  href="hw3parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<script type="text/javascript" src="hw3excredit.js"></script>
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework3.html">HW3</a></li>
+			<li ><a href="hw3part1.html">Part 1</a></li>
+			<li ><a href="hw3part2.html">Part 2</a></li>
+			<li ><a href="hw3part3.html">Part 3</a></li>
+			<li ><a href="hw3part4.html">Part 4</a></li>
+			<li ><a href="hw3part5.html">Part 5</a></li>
+			<li ><a href="hw3part6.html">Part 6</a></li>
+			<li ><a href="hw3extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+		
+		<br><h3>Craps Game</h3>
+
+		<form name="myform">
+			<br><br><br>
+
+			<table class="main">
+
+				<tr>
+				<td>Dice1:</td>
+				<td><input type="text" name="num1" id="num1" size="10" readonly></td>
+				</tr>
+
+				<tr>
+				<td>Dice2:</td>
+				<td><input type="text" name="num2" id="num2" size="10" readonly></td>
+				</tr>
+
+				<tr>
+				<td>Sum:</td>
+				<td><input type="text" name="num2" id="num3" size="10" readonly></td>
+				</tr>
+
+				<tr>
+				<td>Point:</td>
+				<td><input type="text" name="num2" id="num4" size="10" readonly></td>
+				</tr>
+
+			</table>
+
+			<br><div id="errorMsg"></div><br>
+
+			<input type="button" onclick="rolldice()" value="Roll Dice">
+			<input type="reset" value="RESET" onclick="window.location.reload();">
+
+			<br><br><h2>Results:</h2><br>
+			
+			<textarea rows="8" cols="40" name="result"></textarea>
+
+			<br><br>
+
+		</form>	
+
+		<br><br><br>
+	
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework6 - Part 3</title>
+
+<link rel="stylesheet" type="text/css"  href="hw6parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="https://rawgit.com/digitalBush/jquery.maskedinput/1.4.1/dist/jquery.maskedinput.min.js"></script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="hw6part3.js"></script>
+
+
+</head>
+
+<body >
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework6.html">HW6</a></li>
+			<li ><a href="hw6part1.html">Part 1</a></li>
+			<li ><a href="hw6part2.html">Part 2</a></li>
+			<li ><a href="hw6part3.html">Part 3</a></li>
+			<li ><a href="hw6part4.html">Part 4</a></li>
+			<li ><a href="hw6extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+
+		<br><h3>Date Object and String.split</h3><br>
+
+		<p>Today's Date is:</p>
+		
+		<script>
+			var curDate = new Date();
+			document.writeln( "Using toString() : " + curDate.toString() +
+							  "<br> Using toLocaleString() :" + curDate.toLocaleString() +
+							  "<br> Using toUTCString() : " + curDate.toUTCString() +
+							  "<br> The difference in hours between PST/PDT and UTC: " + curDate.getTimezoneOffset() / 60 +
+							  "<br> The difference in hours between EST and UTC: " + ((curDate.getTimezoneOffset() / 60) - 3) +
+							  "<br> The difference in hours between EDT and UTC: " + ((curDate.getTimezoneOffset() / 60) - 2));
+		</script>
+		<br><br>
+		<hr>
+
+		<form name="splitForm" id="splitForm">
+
+			<table class="main">
+
+				<tr>
+					<td>Enter a Phone Number <br>
+						[in the form (123) 456-7890]
+					</td>
+					<td>
+						<input id="phone" type="text" size="13">
+					</td>
+				</tr>
+				
+				<tr>
+		            <td colspan="2">
+		                <input type="button" value="Split" onclick="splitPhoneNumber()">
+		            </td>
+		        </tr>
+		        
+		        <tr>
+		            <td>Area Code:</td>
+		            <td>
+		                <input name="areaCode" id="areaCode" type="text" size="3">
+		            </td>
+		        
+		        </tr>
+	            
+	            <tr>
+	                <td>Phone Prefix:</td>   
+	                <td>
+	                    <input name="phonePrefix" id="phonePrefix" type="text" size="3">
+	                </td>
+	            </tr>
+	            
+	            <tr>
+	                <td>Phone Number:</td>   
+	                <td>
+	                    <input id="phoneNumber" type="text" size="8">
+	                </td>
+	            </tr>
+
+	            <tr>
+	                <td>Phone Number Display:</td>   
+	                <td>
+	                    <input name="fullphone" id="fullphone" type="text" size="13">
+	                </td>
+	            </tr>
+
+
+				<tr>
+		            <td colspan="2">
+		                <input type="reset" value="Reset" onClick="window.location.reload();">
+		            </td>
+		        </tr>
+
+	         </table>
+	         	      
+	    </form>
+
+		<br><br>
+			
+		
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

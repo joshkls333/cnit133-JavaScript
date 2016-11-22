@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework5 - Part 4</title>
+
+<link rel="stylesheet" type="text/css"  href="hw5parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="hw5part4.js"></script>
+
+</head>
+
+<body onload="init();">
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework5.html">HW5</a></li>
+			<li ><a href="hw5part1.html">Part 1</a></li>
+			<li ><a href="hw5part2.html">Part 2</a></li>
+			<li ><a href="hw5part3.html">Part 3</a></li>
+			<li ><a href="hw5part4.html">Part 4</a></li>
+			<li ><a href="hw5extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+
+		<br><h3>Number Input</h3><br>
+
+        <h2>Enter a number between 10 and 100, then click Submit.</h2>
+        <br>
+        <h2>You will only be allowed to enter 10 numbers.</h2>
+    
+        <form name="myform" onreset="return init();">
+            <br>
+
+            <table class="main">
+
+                <tr>
+                <td>Number:</td>
+                <td><input type="text" id="num" name="num" size="10" autofocus></td>
+                </tr>
+
+            </table>
+
+            <br><div id="errorMsg"></div>
+
+            <br><input type="button"  value="SUBMIT" onclick="process();">
+            <input type="reset" value="RESET" >
+
+            <br><br><h2>Numbers:</h2><br>
+            
+            <textarea rows="5" cols="40" id="output" name="result"></textarea>
+
+            <br>
+
+        </form> 
+
+		
+        <br><br><br>
+	
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+/**********
+HW7 - Parts Style Sheet for CNIT 133
+Created by: Josh Klaus
+Email: jklaus1@mail.ccsf.edu
+**********/
+
+
+body { 
+    font-family: Helvetica, arial; 
+ 	background-color: #4E7B2E;
+	color: #000;
+    text-align: center;
+}
+
+.container{
+	border: 1px solid black;
+	width: 940px;
+	margin: 0px auto;
+	text-align: center; /* IE hack */	
+	background-color: #E7FFA5;
+}
+
+a{
+ text-decoration: none;
+ color: #703b00; 
+}
+
+#nav{
+	margin: 0px auto;
+	padding: 10px;
+}
+
+#nav li{
+	display: inline;
+	margin: 0px auto;
+	background-color: #D4A66A;
+	padding: 10px;
+	font-size: 14pt;
+	border: 1px solid black;
+}
+
+#nav a{
+	text-decoration: none;   
+	color: #000;
+}
+
+#nav  a:hover, #nav a:active{
+	color: #FFFFFF;
+	background-color: #553000;
+	padding: 2px;
+}
+
+table.main{
+	width: 700px;
+	background-color: #DE8208;
+	padding: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 0px auto;
+}
+
+tr{
+	text-align: right;
+}
+
+tr.tabletitle{
+	font-size: 22px;
+	font-family: tahoma;
+}
+
+
+tr.headers{
+	font-size: 18px;
+	font-family: tahoma;
+}
+
+th{
+	text-align: center;
+	background-color: #cc9966;
+}
+
+td {
+	border: 1px solid black;
+	text-align: left;
+	padding: 10px;
+}
+
+h2 {
+	font-size: 18pt;
+	color: #000000;
+	background-color: #DE8208;
+	width: 500px;
+	margin: 0px auto;
+	border: 1px solid black;
+}
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework5 - Part 2</title>
+
+<link rel="stylesheet" type="text/css"  href="hw5parts.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="hw5part2.js"></script>
+   
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="../homework5.html">HW5</a></li>
+			<li ><a href="hw5part1.html">Part 1</a></li>
+			<li ><a href="hw5part2.html">Part 2</a></li>
+			<li ><a href="hw5part3.html">Part 3</a></li>
+			<li ><a href="hw5part4.html">Part 4</a></li>
+			<li ><a href="hw5extracredit.html">Extra Credit</a></li>
+		</ul>
+
+	</nav>
+
+	<section class="container">
+
+		<br><h3>State Information</h3><br>
+
+		<button id="opener">Click for instructions</button>
+
+		<div id="dialog" title="Instructions">
+
+		<p>Enter an State abbreviation or name (lower or upper case is ok) in the field next to the
+		State Info button</p>
+		</div>
+		<br><br>
+
+		<table class="main">
+			<tr>
+				<td>AL</td>	
+				<td>Alabama</td>	
+				<td>Montgomery</td>		
+				<td>4,779,736</td>	
+			</tr>
+
+
+			<tr>
+				<td>AK</td>	
+				<td>Alaska</td>	
+				<td>Juneau</td>		
+				<td>710,231</td>	
+			</tr>
+
+
+			<tr>
+				<td>AZ</td>	
+				<td>Arizona</td>	
+				<td>Phoenix</td>		
+				<td>6,392,017</td>	
+			</tr>
+
+			<tr>
+				<td>AR</td>	
+				<td>Arkansas</td>	
+				<td>Little Rock</td>		
+				<td>2,915,918</td>	
+			</tr>
+
+			<tr>
+				<td>CA</td>	
+				<td>California</td>	
+				<td>Sacramento</td>		
+				<td>37,253,956</td>	
+			</tr>
+
+			<tr>
+				<td>CO</td>	
+				<td>Colorado</td>	
+				<td>Denver</td>		
+				<td>5,029,196</td>	
+			</tr>
+
+		</table>
+		<br>
+
+		<form name="SearchForm">
+
+			<input type="text" size="15" name="inputStateVal" autofocus> 
+
+			<input onclick="stateInformation();" type="button" value="State Info" name="search" id="search">
+
+			<br><br>
+
+			<table class="main">
+
+				<tr>
+					<td>
+						State:
+					</td>
+					<td>
+						<input type="text" size="15" name="state" id="state">
+					</td>
+				</tr>	
+
+				<tr>
+					<td>
+						Capital:
+					</td>
+					<td>
+						<input type="text" size="15" name="capital" id="capital">
+					</td>
+				</tr>	
+
+				<tr>
+					<td>
+						Population:
+					</td>
+					<td>
+						<input type="text" size="15" name="population" id="population">
+					</td>
+				</tr>	
+
+			</table>
+
+			<br><input type="reset" value="Reset" onclick="location.reload();">
+
+		</form>
+
+		<br><br><br>
+	
+	</section>
+	
+	<footer class="footer">
+	
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="../img/HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+	</footer>
+
+</body>
+
+</html>

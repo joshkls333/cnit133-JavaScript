@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CNIT 133 Homework</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<link rel="stylesheet" type="text/css"  href="hw7style.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<style>
+h2 {
+	background: url(img/open1.png) no-repeat 0 11px;
+	padding: 10px 0 0 25px;
+	cursor: pointer;
+	text-align: left;
+}
+
+h2.close {
+	background-image: url(img/close1.png);
+}
+.description {
+	margin-left: 25px;	
+}
+.left {
+	text-align: left;
+}
+</style>
+
+    <script>
+        $(document).ready(function () {
+            $('.description').hide();
+
+            $(".main h2").click(function () {
+                var h2 = $(this);
+                var description = h2.next(".description");
+
+                if (description.css("display") == "none") {
+                    description.slideDown(function () {
+                        h2.addClass("close");
+                    });
+                } else {
+                    description.fadeOut(function () {
+                        h2.removeClass("close");
+                    });
+                }
+            });
+        }); 
+    </script>
+
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<ul>
+			<li ><a href="index.html">HW1</a></li>
+			<li ><a href="homework2.html">HW2</a></li>
+			<li ><a href="homework3.html">HW3</a></li>
+			<li ><a href="homework4.html">HW4</a></li>
+			<li ><a href="homework5.html">HW5</a></li>
+			<li ><a href="homework6.html">HW6</a></li>
+			<li ><a href="homework7.html">HW7</a></li>
+			<li ><a href="homework8.html">HW8</a></li>
+		</ul>
+
+	</nav>
+	
+	<div class="container">
+	
+	<br><br>
+	
+	<h1>Homework7 - CNIT 133</h1>
+
+	<div class="main">
+
+	<h2>Part 1</h2>
+
+	<div class="description">
+		<hr>
+		<p class="left">A webpage in which users are allowed to select a page layout and formatting through the use of the className property using at least three form elements.</p>
+		<p class="left"><a href="hw7/hw7part1.html">className property</a></p>
+		<hr>
+	</div>
+
+	<h2>Part 2</h2>
+
+	<div class="description">
+		<hr>
+		<p class="left">A page that has a header of Password Protection Page, a form password element, and submit and reset buttons.</p>
+		<p class="left"><a href="hw7/hw7part2.html">Password Protection Page</a></p>
+		<hr>
+	</div>
+
+	<h2>Part 3</h2>
+
+	<div class="description">
+		<hr>
+		<p class="left">A top navigation bar containing a link to your Homework 1 and five other links that will be to the cover page for each of your Homework2 - Homework6.</p>
+		<p class="left"><a href="hw7/hw7part3.html">Mouseover drop-down navigation</a></p>
+		<hr>
+	</div>
+
+    <h2>Part 4</h2>
+
+	<div class="description">
+		<hr>
+		<p class="left">A photo slide show using jQuery similar to Advanced Gallery with jQuery FancyBox.</p>
+		<p class="left"><a href="hw7/hw7part4.html">Photo Slide Show</a></p>
+		<hr>
+	</div>
+	
+    <h2>Extra Credit</h2>
+
+	<div class="description">
+		<hr>
+		<p class="left">A web page that enables the user to play the game of 15 using a typical 4-by-4 board with the onclick event.</p>
+		<p class="left"><a href="hw7/hw7part4.html">Game of 15</a></p>
+		<hr>
+	</div>
+
+	</div>
+	<br><br>
+	
+	</div>
+	
+	<footer class="footer">
+	
+
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img style="border:0;width:88px;height:31px" 
+					src="HTML5.gif"
+					alt="HTML5">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS!">
+			</a>
+		</p>
+
+
+	</footer>
+
+
+</body>
+
+</html>
