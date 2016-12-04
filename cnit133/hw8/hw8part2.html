@@ -9,7 +9,11 @@
 <link rel="stylesheet" type="text/css"  href="hw8parts.css" />
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<!--
+ Thanks and credit to the following for providing direction:
+ https://fog.ccsf.edu/~srubin/ajaxTime.html
 
+ -->
 	<script type="text/javascript" src="hw8part2.js"></script>
 
 </head>
@@ -36,10 +40,34 @@
 		<br><br>
 
 		<form name="myForm">
-			Name:<input type="text" onkeyup="ajaxFunction();" name="username"><br>
-			Time:<input type="text" name="time"><br>
-			Date:<input type="text" name="date"><br>
-			Date(mm/dd/yy):<input type="text" name="date1">
+
+			<table class="main">
+				<tr>
+					<td>Name:</td>
+				  <td>
+						<input type="text" onkeyup="ajaxFunction();" name="username">
+					</td>
+				</tr>
+				<tr>
+					<td>Time:</td>
+					<td>
+						<input type="text" name="time">
+					</td>
+				</tr>
+				<tr>
+					<td>Date (date, date):</td>
+					<td>
+						<input type="text" name="date">
+					</td>
+				</tr>
+				<tr>
+					<td>Date (mm/dd/yy):</td>
+					<td>
+						<input type="text" name="date1">
+					</td>
+				</tr>
+			</table>
+
 		</form>
 
 

@@ -5,14 +5,17 @@
 <meta charset="utf-8">
 
 <title>CNIT 133 Homework8 - Part 3</title>
+<!--
+ Credit to W3Schools for providing direction in solving this assignment:
+ http://www.w3schools.com/php/php_ajax_poll.asp
 
+ -->
 <link rel="stylesheet" type="text/css"  href="hw8parts.css" />
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 	<script type="text/javascript" src="hw8part3.js"></script>
 
@@ -39,14 +42,26 @@
 
 
 		<div id="poll">
-		<h3>Do you like PHP and AJAX so far?</h3>
+		<h3>Do you have a passion for coding?</h3>
 		<form>
-		Yes:
-		<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
-		<br>No:
-		<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+			<table class="main3">
+				<tr>
+					<td>Yes:</td>
+				  <td>
+				  	<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+				  </td>
+				</tr>
+				<tr>
+					<td>No:</td>
+					<td>
+						<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+					</td>
+				</tr>
+			</table>
+
 		<br>Date Requested:
     <input type="text" id="datepicker" name="date_requested" value="click here" size="30">
+
 		</form>
 		</div>
 

@@ -9,6 +9,10 @@
 <link rel="stylesheet" type="text/css"  href="hw8parts.css" />
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<!--
+ Thanks and credit to the following for providing direction:
+ https://fog.ccsf.edu/~srubin/ajaxZip1.html
+ -->
 
 	<script type="text/javascript" src="hw8part4.js"></script>
 
@@ -36,10 +40,36 @@
     <br><br><br>
 
 		<form name="myForm">
-			State Code:<input type="text" onkeyup="ajaxFunction();" name="code"><br>
-			State Name:<input type="text" name="name" readonly="readonly"><br>
-			State Capital:<input type="text" name="cap" readonly="readonly"><br>
-			Population:<input type="text" name="pop" readonly="readonly">
+
+			<table class="main">
+				<tr>
+					<td>State Code:</td>
+				  <td>
+						<input type="text" onblur="getState(this.value.toUpperCase());" id="stcode" name="stcode">
+					</td>
+				</tr>
+				<tr>
+					<td>State Name:</td>
+					<td>
+						<input type="text" name="name" id="name" readonly="readonly">
+					</td>
+				</tr>
+				<tr>
+					<td>State Capital:</td>
+					<td>
+						<input type="text" name="cap" id="cap" readonly="readonly">
+					</td>
+				</tr>
+				<tr>
+					<td>Population:</td>
+					<td>
+						<input type="text" name="pop" id="pop" readonly="readonly">
+					</td>
+				</tr>
+			</table>
+
+			<br><input type="reset" value="Reset" onClick="window.location.reload();">
+
 		</form>
 
 

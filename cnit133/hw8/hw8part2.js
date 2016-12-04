@@ -4,6 +4,9 @@ Created by: Josh Klaus
 Email: jklaus1@mail.ccsf.edu
 **********/
 
+// Thanks and credit to the following for providing direction:
+// https://fog.ccsf.edu/~srubin/ajaxTime.html
+
 function ajaxFunction(){
     var xmlHttp;
     try{

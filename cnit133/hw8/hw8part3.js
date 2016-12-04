@@ -5,14 +5,16 @@ Email: jklaus1@mail.ccsf.edu
 **********/
 
 /* Datepicker jQuery code */
+
 $(function () {
     $("#datepicker").datepicker();
 });
 
+// Credit to W3Schools for providing direction in solving this assignment:
+// http://www.w3schools.com/php/php_ajax_poll.asp
 
 function getVote(int) {
   if (window.XMLHttpRequest) {
-    // code for IE7+, Firefox, Chrome, Opera, Safari
     xmlhttp=new XMLHttpRequest();
   } else {  // code for IE6, IE5
     xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");

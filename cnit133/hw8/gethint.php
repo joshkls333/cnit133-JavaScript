@@ -5,8 +5,11 @@ $a[] = "Angel";
 $a[] = "Amy";
 $a[] = "Aaron";
 $a[] = "Allison";
+$a[] = "Andy";
 $a[] = "Brittany";
+$a[] = "Bill";
 $a[] = "Cinderella";
+$a[] = "Cynthia";
 $a[] = "Diana";
 $a[] = "Eva";
 $a[] = "Fiona";
@@ -44,7 +47,7 @@ $q = $_REQUEST["q"];
 
 $hint = "";
 
-// lookup all hints from array if $q is different from "" 
+// lookup all hints from array if $q is different from ""
 if ($q !== "") {
     $q = strtolower($q);
     $len=strlen($q);
@@ -59,6 +62,6 @@ if ($q !== "") {
     }
 }
 
-// Output "no suggestion" if no hint was found or output correct values 
+// Output "no suggestion" if no hint was found or output correct values
 echo $hint === "" ? "no suggestion" : $hint;
 ?>

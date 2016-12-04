@@ -9,8 +9,23 @@
 <link rel="stylesheet" type="text/css"  href="hw8parts.css" />
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<!--
+ Thanks and credit to the following for providing direction:
+ http://hills.ccsf.edu/~mogi/demo/gallery-jq.html
+ -->
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="hw8excredit.js"></script>
+
+	<style>
+
+	#picarea{
+		background-color: #454150;
+		border: 1px solid black;
+
+	}
+
+	</style>
 
 
 </head>
@@ -32,21 +47,34 @@
 
 	<section class="container">
 
-		<br><h2>Ajax fading image gallery</h2><br>
+		<br>
+		<h2>Ajax fading image gallery</h2><br>
+
+    <h4>Images</h4>
+
+    <div id="galleryArea">
+        <button id="prev">&lt;&lt; Previous</button>
+        <button id="next">Next >></button>
+        <div id="picArea">
+            <img id="pic" src="/images/curry.png" alt=""/>
+
+            <p><span id="picName"></span></p>
+        </div>
+    </div>
 
 
 
 		<br><br><br>
-		
+
 		<br><br><br>
 
 	</section>
-	
+
 	<footer class="footer">
-	
+
 		<p>
 			<a href="https://validator.w3.org/check?uri=referer">
-				<img style="border:0;width:88px;height:31px" 
+				<img style="border:0;width:88px;height:31px"
 					src="../img/HTML5.gif"
 					alt="HTML5">
 			</a>
